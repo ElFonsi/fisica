@@ -31,12 +31,12 @@ F23=(k)*(q2*10**-6)*(q3*10**-6)
 F23P2=F23/(distancia*distancia)
 print("Fuerza entre q2 y q3: ",F23P2)
 
-#Lo que nos explico el profe
+#Fuerza total en x , y carga 3
 F13X=F23P2
 FTX3=F13X+F23P2
 
 anguloA=90-angulo
-math.radians(anguloA)
+math.radians(anguloA) #sacar fuerza carga 3
 FTY3= (F23P2*math.sin(anguloA))/math.sin(angulo)
 
 Ft3=(FTX3*FTX3)+(FTY3*FTY3)
@@ -44,8 +44,29 @@ Ft3P2=math.sqrt(Ft3)
 
 print("Fuerza total en la carga 3: ", Ft3P2)
 
+
+#Fuerza total en x , y carga 2
+
+F12X=F23P2
+FTX2=F12X+F23P2
+
+anguloB=90-angulo
+math.radians(anguloB) #sacar fuerza carga 3
+FTY2= (F23P2*math.sin(anguloB))/math.sin(angulo)
+
+Ft2=(FTX2*FTX2)+(FTY2*FTY2)
+Ft2P2=math.sqrt(Ft2)
+
+print("Fuerza total en la carga 2: ", Ft2P2)
+
+#fuerza total carga 1
+
+
+
 #Fuerza total suma de todo
 
 fuerzatotal = (F13P2 + F12P2 + F23P2)
 
 print("La fuerza total es: ", fuerzatotal)
+
+
