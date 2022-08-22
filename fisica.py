@@ -37,7 +37,7 @@ FTX3=F13X+F23P2
 
 anguloA=90-angulo
 math.radians(anguloA) #sacar fuerza carga 3
-FTY3= (F23P2*math.sin(anguloA))/math.sin(angulo)
+FTY3= (F13P2*math.sin(angulo))/math.sin(90)
 
 Ft3=(FTX3*FTX3)+(FTY3*FTY3)
 Ft3P2=math.sqrt(Ft3)
@@ -52,7 +52,7 @@ FTX2=F12X+F23P2
 
 anguloB=90-angulo
 math.radians(anguloB) #sacar fuerza carga 3
-FTY2= (F23P2*math.sin(anguloB))/math.sin(angulo)
+FTY2= (F12P2*math.sin(angulo))/math.sin(90)
 
 Ft2=(FTX2*FTX2)+(FTY2*FTY2)
 Ft2P2=math.sqrt(Ft2)
@@ -68,5 +68,6 @@ print("Fuerza total en la carga 2: ", Ft2P2)
 fuerzatotal = (F13P2 + F12P2 + F23P2)
 
 print("La fuerza total es: ", fuerzatotal)
+
 
 
