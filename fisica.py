@@ -69,5 +69,3 @@ fuerzatotal = (F13P2 + F12P2 + F23P2)
 
 print("La fuerza total es: ", fuerzatotal)
 
-
-
